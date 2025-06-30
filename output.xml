@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-28T10:53:12.003089" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="C:\Users\guilh\Downloads\OneDrive_1_28-06-2025\Form-Robot-Framework\form.robot">
+<test id="s1-t1" name="Automatizando site" line="88">
+<kw name="Abrir navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:12.452372" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com'.</msg>
+<arg>url=https://testautomationpractice.blogspot.com</arg>
+<arg>browser=Chrome</arg>
+<arg>options= add_experimental_option("detach",True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-28T10:53:12.452111" elapsed="2.797194"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:12.450792" elapsed="2.798718"/>
+</kw>
+<kw name="Inputar nome">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.250747" level="INFO">Typing text 'Guilherme Correia Lobato' into text field 'id:name'.</msg>
+<arg>locator=${input_name}</arg>
+<arg>text=${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.250319" elapsed="0.080808"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.249982" elapsed="0.081263"/>
+</kw>
+<kw name="Inputar email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.331933" level="INFO">Typing text 'teste@gmail.com' into text field 'id:email'.</msg>
+<arg>locator=${input_email}</arg>
+<arg>text=${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.331720" elapsed="0.056984"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.331492" elapsed="0.057361"/>
+</kw>
+<kw name="Inputar phone">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.389597" level="INFO">Typing text '61 999999999' into text field 'id:phone'.</msg>
+<arg>locator=${input_phone}</arg>
+<arg>text=${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.389380" elapsed="0.055137"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.389126" elapsed="0.055501"/>
+</kw>
+<kw name="Inputar adress">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.445295" level="INFO">Typing text 'rua paineiras numero 234' into text field 'id:textarea'.</msg>
+<arg>locator=${input_adress}</arg>
+<arg>text=${adress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.445079" elapsed="0.084885"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.444863" elapsed="0.085253"/>
+</kw>
+<kw name="Selecionar gênero">
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.530745" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>group_name=gender</arg>
+<arg>value=male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.530622" elapsed="0.087794"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.530391" elapsed="0.088137"/>
+</kw>
+<kw name="Selecionar dia da semana">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.619176" level="INFO">Selecting checkbox 'id:sunday'.</msg>
+<arg>locator=${day_check_box_sunday}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.618990" elapsed="0.065252"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.684639" level="INFO">Selecting checkbox 'id:thursday'.</msg>
+<arg>locator=${day_check_box_thursday}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.684403" elapsed="0.053174"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.737970" level="INFO">Selecting checkbox 'id:friday'.</msg>
+<arg>locator=${day_check_box_friday}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.737745" elapsed="0.046194"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.618772" elapsed="0.165280"/>
+</kw>
+<kw name="Selecionar País">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.784672" level="INFO">Clicking element '//*[@id="country"]'.</msg>
+<arg>locator=//*[@id="country"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.784518" elapsed="0.057015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.841961" level="INFO">Clicking element '//*[@id="country"]/option[9]'.</msg>
+<arg>locator=//*[@id="country"]/option[9]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.841734" elapsed="0.042518"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.784285" elapsed="0.100103"/>
+</kw>
+<kw name="Selecionar cor">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.885031" level="INFO">Clicking element '//*[@id="colors"]/option[1]'.</msg>
+<arg>locator=//*[@id="colors"]/option[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.884875" elapsed="0.081923"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.884640" elapsed="0.082266"/>
+</kw>
+<kw name="Selecionar animal">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.967664" level="INFO">Clicking element '//*[@id="animals"]/option[4]'.</msg>
+<arg>locator=//*[@id="animals"]/option[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.967486" elapsed="0.022373"/>
+</kw>
+<status status="PASS" start="2025-06-28T10:53:15.967233" elapsed="0.022734"/>
+</kw>
+<kw name="Inserir Data Picker 1">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:15.990577" level="INFO">Clicking element '//*[@id="datepicker"]'.</msg>
+<arg>locator=//*[@id="datepicker"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T10:53:15.990425" elapsed="0.057103"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-06-28T10:53:21.302107" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T10:53:21.302317" level="FAIL">Element '//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[3]/a' not visible after 5 seconds.</msg>
+<arg>//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[3]/a</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-06-28T10:53:16.047715" elapsed="5.258321">Element '//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[3]/a' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>locator=//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-28T10:53:21.306224" elapsed="0.000038"/>
+</kw>
+<status status="FAIL" start="2025-06-28T10:53:15.990194" elapsed="5.316200">Element '//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[3]/a' not visible after 5 seconds.</status>
+</kw>
+<kw name="Inserir Data Picker 2">
+<status status="NOT RUN" start="2025-06-28T10:53:21.306789" elapsed="0.000040"/>
+</kw>
+<kw name="Inserir Data Picker start-date">
+<status status="NOT RUN" start="2025-06-28T10:53:21.307594" elapsed="0.000031"/>
+</kw>
+<kw name="Inserir Data Picker end-date">
+<status status="NOT RUN" start="2025-06-28T10:53:21.307907" elapsed="0.000029"/>
+</kw>
+<kw name="Clicar Submit">
+<status status="NOT RUN" start="2025-06-28T10:53:21.308076" elapsed="0.000026"/>
+</kw>
+<kw name="Fechar navegador">
+<status status="NOT RUN" start="2025-06-28T10:53:21.308232" elapsed="0.000026"/>
+</kw>
+<status status="FAIL" start="2025-06-28T10:53:12.450083" elapsed="8.858373">Element '//*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[3]/a' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-06-28T10:53:12.004763" elapsed="9.304688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Form" id="s1" pass="0" fail="1" skip="0">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
