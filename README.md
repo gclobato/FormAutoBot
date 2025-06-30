@@ -1,6 +1,6 @@
 # FormAutoBot
 
-# FormAutoBot 🧠🤖
+# FormAutoBot 🤖
 
 Automação de preenchimento de formulário usando Robot Framework + SeleniumLibrary.  
 Esse projeto simula o preenchimento completo de um formulário com campos de texto, checkbox, radio buttons, select dropdowns e date pickers, no site de testes.
