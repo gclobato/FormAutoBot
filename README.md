@@ -47,12 +47,12 @@ robot form.robot
 # Estrutura
 FormAutoBot/
 │
-├── form.robot           # Arquivo principal do teste
-├── README.md            # Descrição do projeto
-├── .venv/               # Ambiente virtual (se criado)
-├── output.xml           # Saída da execução
-├── log.html             # Log detalhado
-└── report.html          # Relatório final
+├── form.robot       # Arquivo principal do teste
+├── README.md        # Descrição do projeto
+├── .venv/           # Ambiente virtual (se criado)
+├── output.xml       # Saída da execução
+├── log.html         # Log detalhado
+└── report.html      # Relatório final
 
 # Autor
 Guilherme Lobato
